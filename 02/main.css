@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('sky.jpg');
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+}
+
+.clock-face {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -100px;
+  height: 200px;
+  width: 200px;
+  border: 10px solid green;
+  border-radius: 50%;
+}
+
+.hand {
+  position: absolute;
+  border: 2px solid black;
+  width: 85px;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  transform-origin: left;
+}
+
+.hour, .minute, .second {
+  transform: rotate(-90deg);
+}

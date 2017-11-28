@@ -1,0 +1,51 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('beatles.jpg');
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  margin: 0 auto;
+  width: max-content;
+}
+
+li {
+  display: inline-block;
+  text-align: center;
+  width: 55px;
+  height: 55px;
+  margin: 0 5px;
+  padding: 5px;
+  background-color: orange;
+  text-transform: uppercase;
+}
+
+.letter {
+  font-size: 20px;
+  padding-top: 2px;
+}
+
+.sound {
+  font-size: 10px;
+  padding-top: 5px;
+}

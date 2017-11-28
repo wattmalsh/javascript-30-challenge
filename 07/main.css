@@ -1,0 +1,17 @@
+body {
+  padding-top: 50px;
+}
+div {
+  margin: 10px;
+}
+p {
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+p:first-child {
+  font-weight: bold;
+}
+p:not(:first-child) {
+  padding-left: 10px;
+}

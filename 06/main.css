@@ -1,0 +1,63 @@
+html {
+  background-color: gold;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 2em;
+  box-sizing: border-box;
+}
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  padding-bottom: 25px;
+}
+
+input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 60%;
+  display: block;
+  margin: 25px auto 0 auto;
+  text-align: center;
+  font-size: 1em;
+  color: lightgrey;
+  border: 5px solid lightgrey;
+}
+
+.result {
+  width: 360px;
+  height: 0;
+  margin: 0 auto;
+  border-left: .3em solid transparent;
+  border-right: .3em solid transparent;
+}
+.result:nth-child(odd) {
+  border-bottom: 2em solid lightgrey;
+}
+.result:nth-child(even) {
+  border-top: 2em solid lightgrey;
+}
+.result-inner {
+  font-size: .8em;
+  position: absolute;
+  padding-left: 1em;
+  border-bottom: 1px solid grey;
+}
+.result:nth-child(even) > .result-inner {
+  transform: translateY(-100%);
+  width: 348px;
+}
+.result:nth-child(odd) > .result-inner {
+  transform: translate(-1.5%,24%);
+  width: 358px;
+}
+span {
+  color: red;
+}

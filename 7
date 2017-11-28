@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Day 7 - Array Cardio Day 2</title>
+<meta charset="utf-8">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" type="text/css" href="07/main.css"/>
+<link href="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.css" rel="stylesheet" />
+<body>
+  <div class="people">
+    <p>People</p>
+  </div>
+  <div class="comments">
+    <p>Comments</p>
+  </div>
+  <div id="mocha">
+  </div>
+  <script type="text/javascript" src="https://cdn.rawgit.com/jquery/jquery/2.1.4/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/Automattic/expect.js/0.3.1/index.js"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.js"></script>
+  <script type="text/javascript">mocha.setup('bdd')</script>
+  <script type="text/javascript" src="07/test.js"></script>
+  <script type="text/javascript">
+    mocha.checkLeaks();
+    mocha.globals(['jQuery']);
+    mocha.run();
+  </script>
+</body>
+</html>
