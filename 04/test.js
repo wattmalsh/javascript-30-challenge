@@ -1,16 +1,76 @@
 const inventors = [
-  { first: 'Albert', last: 'Einstein', year: 1879, passed: 1955 },
-  { first: 'Isaac', last: 'Newton', year: 1643, passed: 1727 },
-  { first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642 },
-  { first: 'Marie', last: 'Curie', year: 1867, passed: 1934 },
-  { first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630 },
-  { first: 'Nicolaus', last: 'Copernicus', year: 1473, passed: 1543 },
-  { first: 'Max', last: 'Planck', year: 1858, passed: 1947 },
-  { first: 'Katherine', last: 'Blodgett', year: 1898, passed: 1979 },
-  { first: 'Ada', last: 'Lovelace', year: 1815, passed: 1852 },
-  { first: 'Sarah E.', last: 'Goode', year: 1855, passed: 1905 },
-  { first: 'Lise', last: 'Meitner', year: 1878, passed: 1968 },
-  { first: 'Hanna', last: 'Hammarström', year: 1829, passed: 1909 }
+  {
+    first: 'Albert',
+    last: 'Einstein',
+    year: 1879,
+    passed: 1955,
+  },
+  {
+    first: 'Isaac',
+    last: 'Newton',
+    year: 1643,
+    passed: 1727,
+  },
+  {
+    first: 'Galileo',
+    last: 'Galilei',
+    year: 1564,
+    passed: 1642,
+  },
+  {
+    first: 'Marie',
+    last: 'Curie',
+    year: 1867,
+    passed: 1934,
+  },
+  {
+    first: 'Johannes',
+    last: 'Kepler',
+    year: 1571,
+    passed: 1630,
+  },
+  {
+    first: 'Nicolaus',
+    last: 'Copernicus',
+    year: 1473,
+    passed: 1543,
+  },
+  {
+    first: 'Max',
+    last: 'Planck',
+    year: 1858,
+    passed: 1947,
+  },
+  {
+    first: 'Katherine',
+    last: 'Blodgett',
+    year: 1898,
+    passed: 1979,
+  },
+  {
+    first: 'Ada',
+    last: 'Lovelace',
+    year: 1815,
+    passed: 1852,
+  },
+  {
+    first: 'Sarah E.',
+    last: 'Goode',
+    year: 1855,
+    passed: 1905,
+  },
+  {
+    first: 'Lise',
+    last: 'Meitner',
+    year: 1878,
+    passed: 1968,
+  },
+  {
+    first: 'Hanna',
+    last: 'Hammarström',
+    year: 1829,
+    passed: 1909,
+  },
 ];
 
 const inventorsElement = document.getElementById('inventors');
@@ -75,19 +135,19 @@ describe('3. Sort the inventors by birthdate, oldest to youngest', () => {
 
 // Array.prototype.reduce()
 // 4. How many years did all the inventors live?
-const reduce = inventors.reduce((a,b) => a + b.passed - b.year, 0);
-describe("4. How many years did all the inventors live?", () => {
+const reduce = inventors.reduce((a, b) => (a + b.passed) - b.year, 0);
+describe('4. How many years did all the inventors live?', () => {
   it('Should return an number', () => {
     expect(reduce).to.be.an('number');
   });
-  it('Should be equal to 861',() => {
+  it('Should be equal to 861', () => {
     expect(reduce).to.eql(861);
   });
 });
 
 // 5. Sort the inventors by years lived
-const inventors2 = inventors.map((a) => Object.assign(a, {living: a.passed - a.year}))
-const sort2 = inventors2.sort((a, b) => b.passed - b.year - (a.passed - a.year))
+const inventors2 = inventors.map(a => Object.assign(a, { living: a.passed - a.year }));
+const sort2 = inventors2.sort((a, b) => b.passed - b.year - (a.passed - a.year));
 describe('5. Sort the inventors by years lived', () => {
   it('Should return an array', () => {
     expect(sort2).to.be.an('array');
@@ -103,7 +163,7 @@ describe('5. Sort the inventors by years lived', () => {
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 const boulevards = ['Boulevard Auguste-Blanqui', 'Boulevard Barbès', 'Boulevard Beaumarchais', "Boulevard de l'Amiral-Bruix", 'Boulevard des Capucines', 'Boulevard de la Chapelle', 'Boulevard de Clichy', 'Boulevard du Crime', 'Boulevard Haussmann', "Boulevard de l'Hôpital", 'Boulevard des Italiens', 'Boulevard de la Madeleine', 'Boulevard de Magenta', 'Boulevard Montmartre', 'Boulevard du Montparnasse', 'Boulevard Raspail', 'Boulevard Richard-Lenoir', 'Boulevard de Rochechouart', 'Boulevard Saint-Germain', 'Boulevard Saint-Michel', 'Boulevard de Sébastopol', 'Boulevard de Strasbourg', 'Boulevard du Temple', 'Boulevard Voltaire', 'Boulevard de la Zone'];
-const filter2 = boulevards.filter((boulevard) => boulevard.match(/de/));
+const filter2 = boulevards.filter(boulevard => boulevard.match(/de/));
 describe("6. create a list of Boulevards in Paris that contain 'de' anywhere in the name", () => {
   it('Should return an array', () => {
     expect(filter2).to.be.an('array');
@@ -118,7 +178,7 @@ describe("6. create a list of Boulevards in Paris that contain 'de' anywhere in 
 
 // 7. sort Exercise
 // Sort the people alphabetically by last name
-const sort3 = people.sort((a,b) => a.split(',')[1] > b.split(',')[1] ? 1 : -1);
+const sort3 = people.sort((a, b) => (a.split(',')[1] > b.split(',')[1] ? 1 : -1));
 describe('7. sort Exercise', () => {
   it('Should return an array', () => {
     expect(sort3).to.be.an('array');
@@ -134,7 +194,10 @@ describe('7. sort Exercise', () => {
 // 8. Reduce Exercise
 // Sum up the instances of each of these
 const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck'];
-const reduce2 = data.reduce((a, b) => { b in a ? a[b]++ : a[b] = 1; return a; }, {})
+const reduce2 = data.reduce((a, b) => {
+  a[b] = b in a ? a[b] + 1 : 1; // eslint-disable-line no-param-reassign
+  return a;
+}, {});
 describe('8. Reduce Exercise', () => {
   it('Should return an object', () => {
     expect(reduce2).to.be.an('object');

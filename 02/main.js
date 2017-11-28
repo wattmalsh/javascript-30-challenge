@@ -1,5 +1,5 @@
 window.onload = () => {
-  setInterval(function() {
+  setInterval(() => {
     const now = new Date();
     const second = now.getSeconds();
     const minute = now.getMinutes();
@@ -11,9 +11,9 @@ window.onload = () => {
     const minuteHand = document.getElementsByClassName('minute')[0];
     const secondHand = document.getElementsByClassName('second')[0];
 
-    const hourDeg = -90 + hour * 30;
-    const minuteDeg = -90 + minute * 6;
-    const secondDeg = -90 + second * 6;
+    const hourDeg = -90 + (hour * 30);
+    const minuteDeg = -90 + (minute * 6);
+    const secondDeg = -90 + (second * 6);
 
     // 12 hours = 360 degrees, -90 + 1 hour * 30
     hourHand.style.transform = `rotate(${hourDeg}deg)`;

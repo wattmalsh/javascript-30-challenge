@@ -7,5 +7,9 @@ module.exports = {
     window: true,
     document: true,
     fetch: true,
+    Audio: true,
+    describe: true,
+    it: true,
+    expect: true,
   },
 }

@@ -1,6 +1,7 @@
+/* eslint no-console:0 */
 const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
 
-function makeGreen() {
+function makeGreen() { // eslint-disable-line no-unused-vars
   const p = document.querySelector('p');
   p.style.color = '#BADA55';
   p.style.fontSize = '50px';
@@ -10,10 +11,10 @@ function makeGreen() {
 console.log('hello');
 
 // interpolated
-console.log('hello I am a %s string!', 'cool')
+console.log('hello I am a %s string!', 'cool');
 
 // styled
-console.log('%c I am some great text', 'font-size: 20px; background-color: red; text-shadow: 1px 1px 0 blue;')
+console.log('%c I am some great text', 'font-size: 20px; background-color: red; text-shadow: 1px 1px 0 blue;');
 
 // warn
 console.warn('WARNING!');
@@ -25,7 +26,7 @@ console.error('FAIL!');
 console.info('meow');
 
 // testing
-console.assert(1 === 1, "You're right. Show nothing");
+console.assert(1 + 1 === 2, "You're right. Show nothing");
 console.assert(1 === 2, 'That is wrong!');
 
 // clearing
@@ -56,8 +57,8 @@ console.time('fetching data');
 fetch('https://api.github.com/users/wattmalsh')
   .then(data => data.json())
   .then((data) => {
-  console.timeEnd('fetching data');
-  console.log(data);
+    console.timeEnd('fetching data');
+    console.log(data);
   });
 
 // table

@@ -1,4 +1,3 @@
-const div = document.querySelector('div');
 const canvas = document.querySelector('#draw');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
@@ -40,6 +39,6 @@ canvas.addEventListener('mousedown', (e) => {
 canvas.addEventListener('mouseup', () => { isDrawing = false; });
 canvas.addEventListener('mouseout', () => { isDrawing = false; });
 
-function reset() {
+function reset() { // eslint-disable-line no-unused-vars
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
