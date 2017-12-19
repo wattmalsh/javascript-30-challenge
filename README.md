@@ -11,7 +11,7 @@
 [Day 7 - Array Cardio Day 2](http://wattmalsh.com/30/7)<br />
 [Day 8 - Fun with HTML5 Canvas](http://wattmalsh.com/30/8)<br />
 [Day 9 - Dev Tools Domination](http://wattmalsh.com/30/9)<br />
-Day 10 - Hold Shift and Check Checkboxes<br />
+[Day 10 - Hold Shift and Check Checkboxes](http://wattmalsh.com/30/10)<br />
 Day 11 - Custom Video Player<br />
 Day 12 - Key Sequence Detection<br />
 Day 13 - Slide in on Scroll<br />
