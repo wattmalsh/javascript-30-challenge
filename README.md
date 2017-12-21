@@ -2,19 +2,19 @@
 
 **re:** https://javascript30.com/<br />
 
-[Day 1 - JavaScript Drum Kit](http://wattmalsh.com/30/1)<br />
-[Day 2 - JS and CSS Clock](http://wattmalsh.com/30/2)<br />
-[Day 3 - CSS Variables](http://wattmalsh.com/30/3)<br />
-[Day 4 - Array Cardio Day 1](http://wattmalsh.com/30/4)<br />
-[Day 5 - Flex Panel Gallery](http://wattmalsh.com/30/5)<br />
-[Day 6 - Type Ahead](http://wattmalsh.com/30/6)<br />
-[Day 7 - Array Cardio Day 2](http://wattmalsh.com/30/7)<br />
-[Day 8 - Fun with HTML5 Canvas](http://wattmalsh.com/30/8)<br />
-[Day 9 - Dev Tools Domination](http://wattmalsh.com/30/9)<br />
-[Day 10 - Hold Shift and Check Checkboxes](http://wattmalsh.com/30/10)<br />
-[Day 11 - Custom Video Player](http://wattmalsh.com/30/11)<br />
-[Day 12 - Key Sequence Detection](http://wattmalsh.com/30/12)<br />
-[Day 13 - Slide in on Scroll](http://wattmalsh.com/30/13)<br />
+[Day 1 - JavaScript Drum Kit](https://wattmalsh.com/30/1)<br />
+[Day 2 - JS and CSS Clock](https://wattmalsh.com/30/2)<br />
+[Day 3 - CSS Variables](https://wattmalsh.com/30/3)<br />
+[Day 4 - Array Cardio Day 1](https://wattmalsh.com/30/4)<br />
+[Day 5 - Flex Panel Gallery](https://wattmalsh.com/30/5)<br />
+[Day 6 - Type Ahead](https://wattmalsh.com/30/6)<br />
+[Day 7 - Array Cardio Day 2](https://wattmalsh.com/30/7)<br />
+[Day 8 - Fun with HTML5 Canvas](https://wattmalsh.com/30/8)<br />
+[Day 9 - Dev Tools Domination](https://wattmalsh.com/30/9)<br />
+[Day 10 - Hold Shift and Check Checkboxes](https://wattmalsh.com/30/10)<br />
+[Day 11 - Custom Video Player](https://wattmalsh.com/30/11)<br />
+[Day 12 - Key Sequence Detection](https://wattmalsh.com/30/12)<br />
+[Day 13 - Slide in on Scroll](https://wattmalsh.com/30/13)<br />
 Day 14 - JavaScript References VS Copying<br />
 Day 15 - LocalStorage<br />
 Day 16 - Mouse Move Shadow<br />
