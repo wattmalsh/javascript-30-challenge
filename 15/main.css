@@ -1,0 +1,136 @@
+*,*:before,*:after {
+  box-sizing: border-box;
+}
+
+html {
+  background: black;
+}
+
+body {
+  background: url("food.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-size: 16px;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  width: 100vw;
+}
+
+.menu {
+  background: white;
+  background: rgba(255,255,255,0.9);
+  left: 50%;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 255px;
+}
+
+
+h2 {
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.menu-list {
+  list-style-type: none;
+  margin: 20px 0;
+  max-height: 217px;
+  overflow: scroll;
+  padding: 0;
+}
+
+.menu-item {
+  border-bottom: 1px solid lightgrey;
+  font-size: .9em;
+  min-height: 36px;
+  padding-right: 8px;
+  position: relative;
+}
+
+.item-check {
+  cursor: pointer;
+  display: inline-block;
+  font-size: .8em;
+  padding: 6px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+}
+
+.item-text {
+  display: inline-block;
+  margin-left: 31px;
+  max-width: 155px;
+  padding: 8px 0;
+}
+
+.remove-item {
+  background: inherit;
+  border: 0;
+  color: grey;
+  cursor: pointer;
+  font-size: .7em;
+  padding: 6px;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+input[type=text] {
+  font-size: .7em;
+  line-height: 2;
+  padding-left: 5px;
+}
+
+input[type=submit] {
+  background-color: lightgrey;
+  border: 1px lightgrey solid;
+  float: right;
+  font-size: .7em;
+  line-height: 2;
+  padding-top: 2px;
+}
+
+@media (max-device-width: 768px) {
+
+  body {
+    font-size: 50px;
+  }
+
+  .menu {
+    padding: 50px;
+    width: 600px;
+  }
+
+  .menu-list {
+    max-height: 1000px;
+  }
+
+  .menu-item {
+    border-bottom-width: 8px;
+  }
+
+  .item-check {
+    padding: 6px;
+    width: 30px;
+  }
+
+  .item-text {
+    margin-left: 80px;
+    max-width: 600px;
+    padding: 24px 0;
+  }
+
+  input[type="text"] {
+    width: 60%;
+  }
+
+}

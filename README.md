@@ -16,7 +16,7 @@
 [Day 12 - Key Sequence Detection](https://wattmalsh.com/30/12)<br />
 [Day 13 - Slide in on Scroll](https://wattmalsh.com/30/13)<br />
 [Day 14 - JavaScript References VS Copying](https://wattmalsh.com/30/14)<br />
-[Day 15 - LocalStorage](https://wattmalsh.com/30/15)<br />
+[Day 15 - LocalStorage and Event Delegation](https://wattmalsh.com/30/15)<br />
 Day 16 - Mouse Move Shadow<br />
 Day 17 - Sort Without Articles<br />
 Day 18 - Adding Up Times with Reduce<br />
