@@ -1,0 +1,24 @@
+.poop {
+  font-size: 10vh;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-3deg);
+  width: max-content;
+}
+
+.shadow {
+  /* text-shadow: offset-x | offset-y | blur-radius | color */
+  text-shadow: -5px 5px 5px rgba(0,0,0,1);
+}
+
+p {
+  font-size: 30px;
+  text-align: center;
+}
+
+.buttons {
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
