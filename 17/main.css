@@ -1,0 +1,56 @@
+html {
+  background: #ffbf00;
+  font-size: 50px;
+}
+
+.container {
+  height: 80vh;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+}
+
+ul {
+  background: lightgrey;
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+li {
+  border-bottom: 1px solid gray;
+  list-style: none;
+  padding: 5%;
+}
+
+li::before {
+  content: "·";
+  padding-right: 5%;
+}
+
+button {
+  background: lightgrey;
+  border: 1px solid black;
+  float: right;
+  font-size: .8em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+@media (min-device-width: 450px) {
+  body {
+    font-size: 24px;
+  }
+
+  .container {
+    max-width: 400px;
+  }
+
+  li {
+    padding: 10px;
+  }
+}
