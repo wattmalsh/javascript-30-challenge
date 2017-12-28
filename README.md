@@ -19,7 +19,7 @@
 [Day 15 - LocalStorage and Event Delegation](https://wattmalsh.com/30/15)<br />
 [Day 16 - Mouse Move Shadow](https://wattmalsh.com/30/16)<br />
 [Day 17 - Sort Without Articles](https://wattmalsh.com/30/17)<br />
-Day 18 - Adding Up Times with Reduce<br />
+[Day 18 - Adding Up Times with Reduce](https://wattmalsh.com/30/18)<br />
 Day 19 - Webcam Fun<br />
 Day 20 - Speech Detection<br />
 Day 21 - Geolocation<br />
